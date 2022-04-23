@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 200px;
+        }
+        .logo img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            flex: 1;
+        }
+        li:not(:last-child) {
+            margin-right: 50px;
+        }
+        li a {
+            display: flex;
+            flex-direction: column;
+            color: #111;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        li a span {
+            color: #5b8f8f;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="logo"><img src="https://placehold.jp/90x45.png"></div>
+        <ul>
+            <li><a href=""><span>Service</span>サービス</a></li>
+            <li><a href=""><span>Price</span>料金</a></li>
+            <li><a href=""><span>Contact</span>お問い合わせ</a></li>
+        </ul>
+    </div>
+</body>
+</html>

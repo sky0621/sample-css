@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            padding: 50px;
+        }
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 30px 43px 30px 30px;
+            width: 260px;
+            color: #333;
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: #90be70;
+            border-radius: 20%;
+        }
+        a::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #cae6b7;
+            border-radius: 20px;
+            right: 30px;
+        }
+        a::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-top: 2px solid #2b550e;
+            border-right: 2px solid #2b550e;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="">私たちについて</a>
+    </div>
+</body>
+</html>

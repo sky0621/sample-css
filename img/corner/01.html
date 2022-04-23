@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pic {
+            position: absolute; /* 疑似要素の基準 */
+            margin: 30px;
+        }
+        .pic::before,
+        .pic::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+        .pic::before {
+            top: -10px;
+            right: -10px;
+            border-top: 30px solid #ea987e;
+            border-right: 30px solid #ea987e;
+            border-bottom: 30px solid rgba(0 0 0 / 0);
+            border-left: 30px solid rgba(0 0 0 / 0);
+        }
+        .pic::after {
+            bottom: -10px;
+            left: -10px;
+            border-top: 30px solid rgba(0 0 0 / 0);
+            border-right: 30px solid rgba(0 0 0 / 0);
+            border-bottom: 30px solid #ea987e;
+            border-left: 30px solid #ea987e;
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="https://placehold.jp/900x450.png">
+    </div>
+</body>
+</html>

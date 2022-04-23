@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            padding: 30px;
+            width: 28.5%;
+            background-color: #d6d6d6;
+            border-radius: 10px;
+        }
+        /* ３の倍数以外の要素に指定 */
+        .item:not(:nth-child(3n+3)) {
+            margin-right: 2%;
+        }
+        /* ４つ目以降の要素に指定 */
+        .item:nth-child(n+4) {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://placehold.jp/450x350.png">
+            <h2>見出し</h2>
+            <p>レイアウト</p>
+        </div>
+        <div class="item">
+            <img src="https://placehold.jp/450x350.png">
+            <h2>見出し2</h2>
+            <p>レイアウト2</p>
+        </div>
+        <div class="item">
+            <img src="https://placehold.jp/450x350.png">
+            <h2>見出し3</h2>
+            <p>レイアウト3</p>
+        </div>
+        <div class="item">
+            <img src="https://placehold.jp/450x350.png">
+            <h2>見出し4</h2>
+            <p>レイアウト4</p>
+        </div>
+        <div class="item">
+            <img src="https://placehold.jp/450x350.png">
+            <h2>見出し5</h2>
+            <p>レイアウト5</p>
+        </div>
+    </div>
+</body>
+</html>
